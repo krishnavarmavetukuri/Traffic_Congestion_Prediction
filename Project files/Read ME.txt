@@ -1,0 +1,52 @@
+
+
+
+
+
+.open traffic1
+
+drop table jndtls;
+CREATE TABLE jndtls
+(
+jname varchar(40),
+cname varchar(40),
+njunc varchar(40),
+distnj char(2),sgnlsno char(2),inroadsno char(2),outroadsno char(2)
+);
+
+drop table trfcdtls;
+CREATE TABLE trfcdtls
+(
+jname varchar(40),
+RD_tfc_N1i char(1), RD_tfc_N1o char(1), RD_tfc_N2i char(1), RD_tfc_N2o char(1), RD_tfc_S1i char(1),
+RD_tfc_S1o char(1), RD_tfc_E1i char(1), RD_tfc_E1o char(1), RD_tfc_W1i char(1), RD_tfc_W1o char(1)
+);
+
+
+
+0 - no signal & road in that direction
+1 - very low traffic
+2 - low traffic
+3 - Medium traffic
+4 - High Traffic
+5 - Very high traffic
+Each signal is represented by a column(Ex.Hi-tech city has 8 signals).
+Data set comprises of data at diffrent traffic junctions,on different dates at different times.
+The last coulmn indicates whether there is congestion at that junction or not. 0 indicates no congestion.
+1 indicates congestion.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
